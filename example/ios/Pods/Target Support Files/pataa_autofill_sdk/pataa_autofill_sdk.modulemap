@@ -1,0 +1,6 @@
+framework module pataa_autofill_sdk {
+  umbrella header "pataa_autofill_sdk-umbrella.h"
+
+  export *
+  module * { export * }
+}
