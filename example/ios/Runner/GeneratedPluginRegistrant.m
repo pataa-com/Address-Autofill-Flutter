@@ -6,10 +6,10 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<pataa_autofill_sdk/PataaAutofillSdkPlugin.h>)
-#import <pataa_autofill_sdk/PataaAutofillSdkPlugin.h>
+#if __has_include(<pataa_autofill_view/PataaAutofillSdkPlugin.h>)
+#import <pataa_autofill_view/PataaAutofillSdkPlugin.h>
 #else
-@import pataa_autofill_sdk;
+@import pataa_autofill_view;
 #endif
 
 @implementation GeneratedPluginRegistrant

@@ -1,4 +1,4 @@
-group 'com.example.pataa_autofill_sdk'
+group 'com.example.pataa_autofill_view'
 version '1.0'
 
 buildscript {
@@ -43,8 +43,7 @@ repositories {
 }
 
 dependencies {
-//    implementation 'com.github.pataa-com:Address-Autofill-Android:v1.0.4'
+    implementation 'com.github.pataa-com:Address-Autofill-Android:v1.0.5'
     implementation "androidx.annotation:annotation:1.3.0"
     implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'com.github.santoshmodi:addresstest:aac4c457f3'
 }

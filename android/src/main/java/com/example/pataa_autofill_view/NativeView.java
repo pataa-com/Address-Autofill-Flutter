@@ -1,4 +1,4 @@
-package com.example.pataa_autofill_sdk;
+package com.example.pataa_autofill_view;
 
 import android.app.Activity;
 import android.content.Context;
@@ -68,6 +68,11 @@ class NativeView implements PlatformView {
                 }catch (Exception ee){
                     ee.printStackTrace();
                 }
+            }
+
+            @Override
+            public void onError(int statusCode, String message) {
+
             }
         }).setCurrentActivity((Activity) context, creationParams.get("secretKeyAndroid").toString());
 //        Activity activity = ((Activity) context);
