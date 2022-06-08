@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.pataa_autofill_sdk">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application>
+        <meta-data
+            android:name="pataa.autofill.sdk.EnableLogger"
+            android:value="true" />
+        <meta-data
+            android:name="pataa.autofill.sdk.EnableDevelopment"
+            android:value="true" />
+    </application>
+</manifest>
