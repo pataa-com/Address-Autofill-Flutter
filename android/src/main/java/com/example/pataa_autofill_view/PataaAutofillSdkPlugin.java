@@ -1,4 +1,4 @@
-package com.example.pataa_autofill_sdk;
+package com.example.pataa_autofill_view;
 
 import androidx.annotation.NonNull;
 

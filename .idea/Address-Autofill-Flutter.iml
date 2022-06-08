@@ -18,6 +18,9 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/pataa_autofill_sdk/example/ios/.symlinks/plugins/pataa_autofill_sdk/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/pataa_autofill_sdk/example/ios/.symlinks/plugins/pataa_autofill_sdk/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/pataa_autofill_sdk/example/ios/.symlinks/plugins/pataa_autofill_sdk/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/pataa_autofill_view/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/pataa_autofill_view/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/pataa_autofill_view/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

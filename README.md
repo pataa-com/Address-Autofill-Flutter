@@ -1,6 +1,6 @@
-# pataa_autofill_sdk
+# pataa_autofill_view
 
-A new Flutter project.
+Official Address Autofill SDK for Flutter to access Pataa API.
 
 ## Getting Started
 

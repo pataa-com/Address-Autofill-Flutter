@@ -8,7 +8,7 @@
 import Foundation
 import PataaAutoFillSDK
 
-//import pataa_autofill_sdk
+//import pataa_autofill_view
 
 class PataaAutoFillFactory: NSObject, FlutterPlatformViewFactory {
 

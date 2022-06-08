@@ -1,6 +1,6 @@
-# pataa_autofill_sdk_example
+# pataa_autofill_view_example
 
-Demonstrates how to use the pataa_autofill_sdk plugin.
+Demonstrates how to use the pataa_autofill_view plugin.
 
 ## Getting Started
 

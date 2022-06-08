@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:pataa_autofill_sdk/pataa_autofill_view.dart';
+import 'package:pataa_autofill_view/pataa_autofill_view.dart';
 
 void main() {
   HttpOverrides.global = MyHttpOverrides();

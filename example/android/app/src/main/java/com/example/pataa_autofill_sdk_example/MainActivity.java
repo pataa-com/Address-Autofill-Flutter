@@ -1,4 +1,4 @@
-package com.example.pataa_autofill_sdk_example;
+package com.example.pataa_autofill_view_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

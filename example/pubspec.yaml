@@ -1,4 +1,4 @@
-name: pataa_autofill_sdk_example
+name: pataa_autofill_view_example
 description: Demonstrates how to use the pataa_autofill_sdk plugin.
 
 # The following line prevents the package from being accidentally published to
@@ -18,9 +18,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  pataa_autofill_sdk:
+  pataa_autofill_view:
     # When depending on this package from a real application you should use:
-    #   pataa_autofill_sdk: ^x.y.z
+    #   pataa_autofill_view: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
