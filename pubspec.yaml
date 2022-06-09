@@ -1,7 +1,6 @@
 name: pataa_autofill_view
 description: The Address Autofill SDK for Flutter framework provides Pataa Autofill API to easily get Pataa associated users address details.
-version: 1.0.2
-author: Pataa Navigations <info@pataa.com>
+version: 1.0.3
 homepage: https://addressapi.pataa.com/#/login
 repository: https://github.com/pataa-com/Address-Autofill-Flutter
 issue_tracker: https://github.com/pataa-com/Address-Autofill-Flutter/issues

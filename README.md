@@ -23,7 +23,7 @@ This plugin relies on the native iOS and Android SDK. The native SDKs a few of t
 
 ## Usage
 
-To use the plugin you just need to add pataa_autofill_view: ^1.0.2 into your pubspec.yaml file and run pub get.
+To use the plugin you just need to add pataa_autofill_view: ^1.0.3 into your pubspec.yaml file and run pub get.
 
 Further you need the iOS SECRET KEY, iOS PREFIX and ANDROID SECRET KEY to use the plugin.
 * [Address API: Homepage] (https://addressapi.pataa.com/#/login)
@@ -41,8 +41,18 @@ Further you need the iOS SECRET KEY, iOS PREFIX and ANDROID SECRET KEY to use th
 To use the Pataa Autofill Flutter SDK :-
 
 ## Add following into your package's pubspec.yaml (and run an implicit dart pub get):
+pataa_autofill_view: ^1.0.3
 
-pataa_autofill_view: ^1.0.2
+Goto iOS folder into the terminal and just run pod install.
+If you get the following error :
+
+[!] CocoaPods could not find compatible versions for pod "pataa_autofill_view":
+  In Podfile:
+    pataa_autofill_view (from `.symlinks/plugins/pataa_autofill_view/ios`)
+
+Specs satisfying the `pataa_autofill_view (from `.symlinks/plugins/pataa_autofill_view/ios`)` dependency were found, but they required a higher minimum deployment target.
+
+Just update the minimum deployment target of the xcode project to 10.0
 
 ## Example
 PataaAutoFillView pataaView = PataaAutoFillView(
