@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
     PataaAutoFillView pataaView = PataaAutoFillView(
       // TODO: INSERT YOUR SECRET KEYS.
       secretKeyiOS: "===INSERT YOUR iOS SECRET KEY===",
-      appPrefixiOS: "===INSERT YOUR iOS SECRET KEY===",
+      appPrefixiOS: "===INSERT YOUR iOS PREFIX===",
       secretKeyAndroid: '===INSERT YOUR Android SECRET KEY===',
       widthAddressInputField: MediaQuery.of(context).size.width - 10,
       heightAddressInputField:

@@ -1,3 +1,3 @@
-## 1.0.0 - 08/06/2022
+## 1.0.3 - 09/06/2022
 
-* First Release.
+* Updated Swift Version.
