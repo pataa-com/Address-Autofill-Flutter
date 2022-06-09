@@ -94,7 +94,7 @@ class _PataaAutoFillViewState extends State<PataaAutoFillView> {
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {
       return SizedBox(
         height: widget.heightAddressInputField,
-        // width: widget.widthAddressInputField,
+        width: widget.widthAddressInputField,
         child: UiKitView(
           viewType: 'NativeView',
           creationParams: data,
