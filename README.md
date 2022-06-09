@@ -1,13 +1,14 @@
 # Pataa Address Autofill
 
 Official Address Autofill SDK for Flutter to access Pataa API. This plugin supports both iOS and Android.
-|             | Android | iOS  |
-|-------------|---------|------|
-| **Support** | SDK 21+ | 10.0+ |
+
+One of the major reasons of reduced churn rate i.e. a customer filling his cart with selected merchandise from your website but abandoning it before placing his order, is the long and tedious process of address filling. Pataa Navigations has the perfect solution for this problem, the Pataa Address Fill API. Our addressing app Pataa converts a long and complex address into a unique short code like JAIN53, KUMAR100 and simplifies complex addressing systems by sharing precise geo-tagged location, user recommended routes, user recorded voice directions and more, thus making last mile navigation easy. Now instead of long address details, the customer simply enters the Pataa code (^KUMAR100) in the address section and you can navigate straight to it without any hassle.
+
+|               | Android   | iOS    |
+| :-------------| :---------| :------|
+| **Support**   | SDK 21+   | 10.0+  |
 
 # Pataa AutoFill SDK Implementation Guide
-
-One of the major reasons of reduced churn rate i.e. a customer filling his cart with selected merchandise from your website but abandoning it before placing his order, is the long and tedious process of address filling. Pataa Navigations has the perfect solution for this problem, the Pataa Address Fill API. Our addressing app Pataa converts a long and complex address into a unique short code like JAIN53,KUMAR100 and simplifies complex addressing systems by sharing precise geo-tagged location, user recommended routes, user recorded voice directions and more, thus making last mile navigation easy. Now instead of long address details, the customer simply enters the Pataa code (^KUMAR100) in the address section and you can navigate straight to it without any hassle.
 
 ## Features
 
@@ -23,7 +24,7 @@ This plugin relies on the native iOS and Android SDK. The native SDKs a few of t
 
 ## Usage
 
-To use the plugin you just need to add pataa_autofill_view: ^1.0.3 into your pubspec.yaml file and run pub get.
+To use the plugin you just need to add pataa_autofill_view: ^1.0.5 into your pubspec.yaml file and run pub get.
 
 Further you need the iOS SECRET KEY, iOS PREFIX and ANDROID SECRET KEY to use the plugin.
 * [Address API: Homepage] (https://addressapi.pataa.com/#/login)
@@ -41,7 +42,7 @@ Further you need the iOS SECRET KEY, iOS PREFIX and ANDROID SECRET KEY to use th
 To use the Pataa Autofill Flutter SDK :-
 
 ## Add following into your package's pubspec.yaml (and run an implicit dart pub get):
-pataa_autofill_view: ^1.0.3
+pataa_autofill_view: ^1.0.5
 
 Goto iOS folder into the terminal and just run pod install.
 If you get the following error :
@@ -55,20 +56,22 @@ Specs satisfying the `pataa_autofill_view (from `.symlinks/plugins/pataa_autofil
 Just update the minimum deployment target of the xcode project to 10.0
 
 ## Example
-PataaAutoFillView pataaView = PataaAutoFillView(
+
     // TODO: INSERT YOUR SECRET KEYS.
-    secretKeyiOS: "===INSERT YOUR iOS SECRET KEY===",
-    appPrefixiOS: "===INSERT YOUR iOS SECRET KEY===",
-    secretKeyAndroid: '===INSERT YOUR Android SECRET KEY===',
-    widthAddressInputField: MediaQuery.of(context).size.width - 10,
-    heightAddressInputField:
-        defaultTargetPlatform == TargetPlatform.iOS ? 100 : 120,
-    onLoadData: (data) {
-        if (kDebugMode) {
-            print('Pataa Details :- $data');
-        }
-    },
- );
+
+    PataaAutoFillView pataaView = PataaAutoFillView(
+        secretKeyiOS: "===INSERT YOUR iOS SECRET KEY===",
+        appPrefixiOS: "===INSERT YOUR iOS PREFIX KEY===",
+        secretKeyAndroid: '===INSERT YOUR Android SECRET KEY===',
+        widthAddressInputField: MediaQuery.of(context).size.width - 10,
+        heightAddressInputField:
+            defaultTargetPlatform == TargetPlatform.iOS ? 100 : 120,
+        onLoadData: (data) {
+            if (kDebugMode) {
+                print('Pataa Details :- $data');
+            }
+        },
+    );
 
 ## Changelog
 
@@ -77,3 +80,7 @@ All notable changes to this project will be documented in [this file](./CHANGELO
 ## Issues
 
 To report your issues, submit them directly in the [Issues](https://github.com/pataa-com/Address-Autofill-Flutter/issues) section.
+
+## License
+
+[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)

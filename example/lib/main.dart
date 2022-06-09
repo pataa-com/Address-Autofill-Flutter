@@ -65,8 +65,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: INSERT YOUR SECRET KEYS.
     PataaAutoFillView pataaView = PataaAutoFillView(
-      // TODO: INSERT YOUR SECRET KEYS.
       secretKeyiOS: "===INSERT YOUR iOS SECRET KEY===",
       appPrefixiOS: "===INSERT YOUR iOS PREFIX===",
       secretKeyAndroid: '===INSERT YOUR Android SECRET KEY===',
