@@ -67,9 +67,12 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     // TODO: INSERT YOUR SECRET KEYS.
     PataaAutoFillView pataaView = PataaAutoFillView(
-      secretKeyiOS: "===INSERT YOUR iOS SECRET KEY===",
-      appPrefixiOS: "===INSERT YOUR iOS PREFIX===",
-      secretKeyAndroid: '===INSERT YOUR Android SECRET KEY===',
+      secretKeyiOS: "nLi6p88sLmLRFOgXWrTUqcfX6gsXVi9gy6lJCTjc/tw=",
+      appPrefixiOS: "4TVCUP6HC7",
+      secretKeyAndroid: 'TNp03LS9tVTAxa6P0JQT4dYKIMJlvTWIy7xUi4BiCV4=',
+      // secretKeyiOS: "===INSERT YOUR iOS SECRET KEY===",
+      // appPrefixiOS: "===INSERT YOUR iOS PREFIX===",
+      // secretKeyAndroid: '===INSERT YOUR Android SECRET KEY===',
       widthAddressInputField: MediaQuery.of(context).size.width - 10,
       heightAddressInputField:
           defaultTargetPlatform == TargetPlatform.iOS ? 100 : 120,
