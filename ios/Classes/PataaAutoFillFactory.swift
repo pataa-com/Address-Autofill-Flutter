@@ -45,7 +45,7 @@ public class NativeView : NSObject, FlutterPlatformView, PataaAutoFillDelegate {
         let encoder = JSONEncoder()
         
         if let pataaDetails = pataaDetails, let pataa = pataaDetails.pataa {
-            let dict = ["pataaCode": pataa.pataaCode, "address1": pataa.address1, "address2": pataa.address2, "address3": pataa.address3, "address4": pataa.address4, "zipcode": pataa.zipcode, "cityName": pataa.cityName, "stateCode": pataa.stateCode, "stateName": pataa.stateName, "countryCode": pataa.countryCode, "countryName": pataa.countryName, "mapLink": pataa.qrCode, "firstName": pataaDetails.user?.firstName, "lastName": pataaDetails.user?.lastName, "userCountryCode": pataaDetails.user?.countryCode, "mobile": pataaDetails.user?.mobile]
+            let dict = ["pataaCode": pataa.pataaCode, "address1": pataa.address1, "address2": pataa.address2, "address3": pataa.address3, "address4": pataa.address4, "zipcode": pataa.zipcode, "cityName": pataa.cityName, "stateCode": pataa.stateCode, "stateName": pataa.stateName, "countryCode": pataa.countryCode, "countryName": pataa.countryName, "mapLink": pataa.qrCode, "firstName": pataaDetails.user?.firstName, "lastName": pataaDetails.user?.lastName, "userCountryCode": pataaDetails.user?.countryCode, "mobile": pataaDetails.user?.mobile, "email":pataaDetails.user?.emaiId]
                         
             if let jsonData = try? encoder.encode(dict) {
                 if let jsonString = String(data: jsonData, encoding: .utf8) {

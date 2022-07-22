@@ -12,7 +12,7 @@
 
 ## 1.0.2
 
-* Updated readme file and example.
+* Updated readme file a nd example.
 
 ## 1.0.1
 
