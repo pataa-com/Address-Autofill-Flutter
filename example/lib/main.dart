@@ -54,6 +54,7 @@ class _HomeState extends State<Home> {
   String lastName = "";
   String userCountryCode = "";
   String mobile = "";
+  String email = "";
   String error = "";
 
   bool isResponse = false;
@@ -67,7 +68,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     // TODO: INSERT YOUR SECRET KEYS.
     PataaAutoFillView pataaView = PataaAutoFillView(
-      secretKeyiOS: "nLi6p88sLmLRFOgXWrTUqcfX6gsXVi9gy6lJCTjc/tw=",
+      secretKeyiOS: "NMyaGrfjCXWokYAGPj1CbWJsbzg8Ou8YtDx4MrTMAz0=",
       appPrefixiOS: "4TVCUP6HC7",
       secretKeyAndroid: 'TNp03LS9tVTAxa6P0JQT4dYKIMJlvTWIy7xUi4BiCV4=',
       // secretKeyiOS: "===INSERT YOUR iOS SECRET KEY===",
@@ -100,6 +101,7 @@ class _HomeState extends State<Home> {
           address2 = "";
           mobile = "";
           error = "";
+          email = "";
           if (data.containsKey("error")) {
             error = data["error"];
           } else {
@@ -123,6 +125,7 @@ class _HomeState extends State<Home> {
             mapLink = data["mapLink"] ?? "";
             address2 = data["address2"] ?? "";
             mobile = data["mobile"] ?? "";
+            email = data["email"] ?? "";
           }
         });
       },
@@ -211,6 +214,10 @@ class _HomeState extends State<Home> {
                             ),
                             Text(
                               "Mobile Country Code: $userCountryCode",
+                              style: getTextStyle(),
+                            ),
+                            Text(
+                              "Email: $email",
                               style: getTextStyle(),
                             ),
                           ],
